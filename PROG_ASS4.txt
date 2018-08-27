@@ -1,0 +1,60 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <Computation of Specific Gravity>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float ml, mh2o, mp;
+	float n1, n2, n3;
+
+	cout<<"Specific Gravity of Liquid\n\n";
+	cout<<"problem:\n";
+	cout<<"Ann have an experiment in her Physics class, her task is\n";
+	cout<<"to find the Specific Gravity of liquid using the method\n";
+	cout<<"of Pycnometer. First she weigh the Pycnometer which is\n";
+	cout<<"25.7g and second she weigh the Pycnometer with filled of\n";
+	cout<<"water and got 81.3g. And last she weigh the Pycnometer\n";
+	cout<<"with filled of liquid Brine Solution and got 84.4g. What\n";
+	cout<<"is the Specific Gravity of Brine Solution?\n\n";
+	
+	cout<<"Formula:\n";
+	cout<<"W = m * g = N\n";
+	cout<<"specific gravity = Wl - Wp / Wh2o-Wp\n\n";
+	cout<<"given:\n"<<"Wl = 84.4g\t"<<"Wp = 25.7g\n"<<"Wh2o = 81.3g\n\n";
+	cout<<"Find: Speific Gravity\n\n";
+	cout<<"Solution:\n\n";
+	cout<<"Enter the weight of liquid(no. only):\n";
+	cin>>ml;
+	cout<<"\n\n"<<"Enter the weight of water(no. only):\n";
+	cin>>mh2o;
+	cout<<"\n\n"<<"enter the weight of pycnometer(no. only):\n";
+	cin>>mp;
+	cout<<"\n";
+	
+	n1=((ml/1000)*9.8);
+	n2=((mh2o/1000)*9.8);
+	n3=((mp/1000)*9.8);
+	
+	cout<<"converted to newton:\n";
+	cout<<"Wl = "<<n1<<"N\n";
+	cout<<"Wh2o = "<<n2<<"N\n";
+	cout<<"Wp = "<<n3<<"N\n\n";
+	
+	float eq1;
+	
+	cout<<"Specific gravity = "<<n1<<"N"<<" - "<<n3<<"N"<<" / "<<n2<<"N"<<" - "<<n3<<"N\n\n";
+	
+	eq1=((n1-n3)/(n2-n3));
+	
+	cout<<"Specific Gravity of Brine Solution is "<<eq1;
+	
+	return 0;
+	}

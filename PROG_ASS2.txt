@@ -1,0 +1,84 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <College Application Form>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	string name;
+	string mn;
+	string sn ;
+	string birth;
+ char age[256];
+	string status;
+	string rel;
+	string address;
+	string email;
+	string phone;
+	string pg;
+	string pgphone;
+	string city;
+	string country;
+	string fc;
+	string sc;
+	
+	cout<<"college application form."<<endl;
+	cout<<"Name:";
+	getline(cin,name);
+	cout<<"Middle Name:";
+	getline(cin,mn);
+	cout<<"Surname:";
+	getline(cin,sn);
+	cout<<"Age:";
+ cin.getline(age,256);
+	cout<<"Birthday:";
+	getline(cin,birth);
+	cout<<"Current Address:";
+	getline(cin,address);
+	cout<<"Status:";
+	getline(cin,status);
+	cout<<"Religion:";
+	getline(cin,rel);
+	cout<<"City:";
+	getline(cin,city);
+	cout<<"Country:";
+	getline(cin,country);
+	cout<<"Email:";
+	getline(cin,email);
+	cout<<"phone:";
+	getline(cin,phone);
+	cout<<"Parents/Guardian Name:";
+	getline(cin,pg);
+	cout<<"contact:";
+	getline(cin,phone);
+	cout<<endl;
+	
+	cout<<"Choose your 1st and 2nd choices of your program:"<<endl;
+	cout<<"1st choice:";
+	getline(cin,fc);
+	cout<<"2nd choice:";
+	getline(cin,sc);
+	cout<<endl;
+	
+	cout<<"Congratuation! you are now registered."<<endl;
+	cout<<"Profile\n";
+	cout<<"Fullname:"<<sn<<" "<<name<<" "<<mn<<endl;
+	cout<<"Address:"<<address<<endl;
+	cout<<"Email:"<<email<<endl;
+	cout<<"Phone:"<<phone<<endl;
+	cout<<endl;
+	
+	cout<<"Your program chose:\n";
+	cout<<"first:"<<fc<<endl;
+	cout<<"sesond:"<<fc<<endl;
+	
+	
+	return 0;
+}

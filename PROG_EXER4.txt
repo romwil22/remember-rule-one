@@ -1,0 +1,38 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <Force>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+
+#include <iostream>
+using namespace std;
+main()
+{
+	float A;
+	float M1; 
+	float M2; 
+	float D; 
+	float k=0.000000067; 
+	float B; 
+	float F;
+	float ff;
+	
+	cout<<"Mass 1 and Mass 2:"<<endl;
+	cin>>M1>>M2;
+	cout<<"distance"<<endl;
+	cin>>D;
+	cout<<endl;
+
+	A=(M1*M2);
+	B=(D*D);
+	F=(A/B);
+	ff=(k*F);		
+	
+	cout<<ff<<endl;	
+	
+	return 0;
+}

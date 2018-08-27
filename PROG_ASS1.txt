@@ -1,0 +1,58 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <Question and Answer>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+#include <iostream>
+using namespace std;
+int main()
+{	
+	char md;
+	string nm;
+	string sm;
+	string st;
+	char answer[10];
+	int f,kg,mps;
+		
+	cout<<"Given name:";
+	cin>>nm;
+	cout<<"M.I:";
+	cin>>md;
+	cout<<"Surname:";
+	cin>>sm;
+	cout<<"Section:";
+	cin>>st;
+	
+	cout<<"Solve the problem. How much net force is required to accelerate a 2000 kg car at 3.00 m/s2?"<<endl;
+	
+	cout<<"Enter the kilogram:";
+	cin>>kg;
+	cout<<"enter the meter/second2:";
+	cin>>mps;
+	
+	f=kg*mps;
+	
+	cout<<f;
+	
+	cout<<"  answer is 6000N"<<endl;
+	
+	cout << "Force is measured in Newtons ??, mass in kilograms (kg), and acceleration in meters per second squared m/s2 "<<endl;
+    
+    cout<< " a. True \t b. False:"<<endl;
+    cout << "Your answer is:";
+    cin >> answer [0];
+   
+    if (answer[0]== 'a'){
+    cout << "Your answer is Correct";
+        
+}else{
+    cout << "Your answer is Wrong";
+}
+
+	return 0;
+
+}

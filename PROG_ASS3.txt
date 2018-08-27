@@ -1,0 +1,87 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <Computation of Determinant Method 2x2 and 3x3>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, c, d, e, f, g, h, i;
+	int eq1, eq2, eq3, eq4, eq5, eq6, eq7, eq8, eq9;
+	int a1, b1, c1, d1;
+	int eq11, eq22, eq33;
+	char choose;
+	char main='y';
+	
+	while(main=='y'||main=='Y')
+	{
+	cout<<"Determinat Method\n\n";
+	cout<<"type a for 3x3 and b for 2x2:\n";
+	cin>>choose;
+	
+	if(choose=='a')
+	{
+	cout<<"Determinant method 3x3\n";
+	cout<<endl;
+	
+	cout<<"Enter the 1st row:\n";
+	cin>>a>>b>>c;
+	cout<<endl;
+	cout<<"Enter the 2nd row:\n";
+	cin>>d>>e>>f;
+	cout<<endl;
+	cout<<"Enter the 3rd row:\n";
+	cin>>g>>h>>i;
+	cout<<endl;
+	
+	
+	eq1=(a*e*i);
+	eq2=(b*f*g);
+	eq3=(c*d*h);
+	eq4=((eq1)+(eq2)+(eq3));
+	eq5=(g*e*c);
+	eq6=(h*f*a);
+	eq7=(i*d*b);
+	eq8=((eq5)+(eq6)+(eq7));
+	eq9=((eq4)-(eq8));
+	
+	cout<<eq1<<"+"<<eq2<<"+"<<eq3<<"="<<eq4<<endl;
+	cout<<eq5<<"+"<<eq6<<"+"<<eq7<<"="<<eq8<<endl;
+	cout<<eq4<<"-"<<eq8<<"="<<eq9;
+	cout<<"\n\n";
+	cout<<"Do you want to try the other method? (y/n)\n";
+	cin>>main;
+	}
+	
+	else if(choose=='b')
+	{
+	cout<<"enter 1st row:\n";
+	cin>>a1>>b1;
+	cout<<endl;
+	cout<<"enter 2nd row:\n";
+	cin>>c1>>d1;
+	cout<<endl;
+	
+	eq11=(a1*d1);
+	eq22=(c1*b1);
+	eq33=((eq11)-(eq22));
+	
+	cout<<eq11<<"-"<<eq22<<"="<<eq33;
+	cout<<"\n\n";
+	cout<<"do you want to try another method? (y/n)\n";
+	cin>>main;
+	}
+	
+	else 
+	{
+	cout<<"Invalid type. do you want to try again? (y/n)\n";
+	cin>>main;
+	}
+}
+}

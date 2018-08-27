@@ -1,0 +1,30 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <boolean>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+
+#include <iostream>
+using namespace std;
+main()
+{
+	bool A, B, C;
+	int a=5;
+	int b=7;
+	int c=11;
+	int d=12;
+	
+	A=(a+b)>(b-c);
+	B=!(a*c>c++);
+	C=(d+c+b)>=(b*c)||(a*b)<=(d+c+b);
+	
+	cout<<A<<endl;
+	cout<<B<<endl;
+	cout<<C<<endl;
+
+	return 0;
+}

@@ -1,0 +1,25 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <Rice>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+
+#include <iostream>
+using namespace std;
+main()
+{
+	int b=2205;
+	float a, c;
+	
+	cout<<"enterthe size of bag:"<<endl;
+	cin>>c;
+	
+	a=(b/c);
+	cout<<a;
+
+	return 0;
+}

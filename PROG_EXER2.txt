@@ -1,0 +1,33 @@
+/*
+*AUTHOR <Pilapil, Romwil James D.>
+*DATE <>
+*NAME <Profile>
+*ARGUMENTS <NONE>
+*RETURNS <NONE>
+*NOTES <>
+*CHANGE HISTORY <>
+*/
+
+#include <iostream>
+using namespace std;
+main()
+{
+	string name;" ";
+	string birthdate;" ";
+	string email;" ";
+	string phone;" ";
+	string address;" ";
+	
+	cout<<"Name:";
+	cin>>name;
+	cout<<"Birthdate:";
+	cin>>birthdate;
+	cout<<"Email:";
+	cin>>email;
+	cout<<"phone:";
+	cin>>phone;
+	cout<<"Address:";
+	cin>>address;
+	
+	return 0;
+}
